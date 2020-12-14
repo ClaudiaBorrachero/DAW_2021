@@ -1,0 +1,17 @@
+<!-- crear contenedor web con puerto y apache -->
+docker run -it -d --name web -p 9595:80 httpd
+docker run -it -d --name web -p 9292:80 --net red_ejemplo1 --ip 172.30.0.20 httpd
+<!-- crear red -->
+docker create --subnet 172.30.0.0/16 --gateway 172.30.0.1 red_ejemplo2
+<!-- inspect red -->
+docker network inspect red_ejemplo2
+<!-- entrar root -->
+docker exec -it web /bin/bash
+ls
+cd htdocs/
+ls
+echo "<h1>HOLA MUNDO</h1>" > index.html 
+more index.html
+<!-- virtual host -->
+cd /etc/
+ls

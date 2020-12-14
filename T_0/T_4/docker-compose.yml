@@ -1,0 +1,34 @@
+version: '2'
+services:
+  servicio1:
+    image: 'docker.io/bitnami/mariadb:10.3-debian-10'
+    container_name: contenedor1
+    environment:
+      - MARIADB_USER=bn_suitecrm
+      - MARIADB_DATABASE=bitnami_suitecrm
+      - ALLOW_EMPTY_PASSWORD=yes
+    volumes:
+      - 'mariadb_data:/bitnami'
+  servicio2:
+    image: 'docker.io/bitnami/suitecrm:7-debian-10'
+    container_name: contenedor2
+    environment:
+      - CONTAINER_NAME=contenedor2
+      - MARIADB_HOST=servicio1
+      - MARIADB_PORT_NUMBER=3306
+      - SUITECRM_DATABASE_USER=bn_suitecrm
+      - SUITECRM_DATABASE_NAME=bitnami_suitecrm
+      - ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - '8181:80'
+      - '8282:80'
+      - '8383:80'
+    volumes:
+      - 'suitecrm_data:/bitnami'
+    depends_on:
+      - servicio1
+volumes:
+  mariadb_data:
+    driver: local
+  suitecrm_data:
+    driver: local
