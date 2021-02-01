@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: pruebas.TestCrudProducto
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 1.442 sec <<< FAILURE!
+pruebas.TestCrudProducto.testCreate()  Time elapsed: 1.421 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at pruebas.TestCrudProducto.testCreate(TestCrudProducto.java:46)
+
+pruebas.TestCrudProducto.testUpdate()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at pruebas.TestCrudProducto.testUpdate(TestCrudProducto.java:63)
+
+pruebas.TestCrudProducto.testList()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at pruebas.TestCrudProducto.testList(TestCrudProducto.java:76)
+
+pruebas.TestCrudProducto.testDelete()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at pruebas.TestCrudProducto.testDelete(TestCrudProducto.java:87)
+

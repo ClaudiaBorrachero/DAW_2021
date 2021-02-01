@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="4" failures="4" name="pruebas.TestCrudProducto" time="1.422" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="14.0.2+12-Ubuntu-1"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-14-openjdk-amd64/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/pekechis/eclipse-workspace/pruebas"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="java.vendor.url" value="Unknown"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/pekechis/eclipse-workspace/pruebas"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="14.0.2+12-Ubuntu-1"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/share/maven/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="58.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="5.8.0-7630-generic"/>
+    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
+    <property name="user.home" value="/home/pekechis"/>
+    <property name="user.timezone" value="Europe/Madrid"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="14"/>
+    <property name="user.name" value="pekechis"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="14"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.home" value="/usr/lib/jvm/java-14-openjdk-amd64"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="14.0.2"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2020-07-14"/>
+    <property name="java.vendor.url.bug" value="Unknown"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+  </properties>
+  <testcase classname="pruebas.TestCrudProducto" name="pruebas.TestCrudProducto.testCreate" time="1.421">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at pruebas.TestCrudProducto.testCreate(TestCrudProducto.java:46)
+</failure>
+    <system-out>Hibernate Configuration loaded
+Hibernate serviceRegistry created
+Probando creación de objetos...
+</system-out>
+    <system-err>ene. 25, 2021 6:48:33 P. M. org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {5.4.4.Final}
+ene. 25, 2021 6:48:33 P. M. org.hibernate.annotations.common.reflection.java.JavaReflectionManager &lt;clinit&gt;
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+ene. 25, 2021 6:48:33 P. M. org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+ene. 25, 2021 6:48:33 P. M. org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mariadb://localhost:3336/productos?createDatabaseIfNotExists=true]
+ene. 25, 2021 6:48:33 P. M. org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=root}
+ene. 25, 2021 6:48:33 P. M. org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+ene. 25, 2021 6:48:33 P. M. org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections &lt;init&gt;
+INFO: HHH000115: Hibernate connection pool size: 100 (min=1)
+ene. 25, 2021 6:48:33 P. M. org.hibernate.dialect.Dialect &lt;init&gt;
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+ene. 25, 2021 6:48:34 P. M. org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@8a2a6a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection &apos;local transaction&apos; will be committed and the Connection will be set into auto-commit mode.
+</system-err>
+  </testcase>
+  <testcase classname="pruebas.TestCrudProducto" name="pruebas.TestCrudProducto.testUpdate" time="0.001">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at pruebas.TestCrudProducto.testUpdate(TestCrudProducto.java:63)
+</failure>
+    <system-out>Session Factory Destroyed
+Probando la actualización del producto...
+</system-out>
+    <system-err>ene. 25, 2021 6:48:34 P. M. org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PoolState stop
+INFO: HHH10001008: Cleaning up connection pool [jdbc:mariadb://localhost:3336/productos?createDatabaseIfNotExists=true]
+</system-err>
+  </testcase>
+  <testcase classname="pruebas.TestCrudProducto" name="pruebas.TestCrudProducto.testList" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at pruebas.TestCrudProducto.testList(TestCrudProducto.java:76)
+</failure>
+    <system-out>Session Factory Destroyed
+Running testList...
+</system-out>
+  </testcase>
+  <testcase classname="pruebas.TestCrudProducto" name="pruebas.TestCrudProducto.testDelete" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at pruebas.TestCrudProducto.testDelete(TestCrudProducto.java:87)
+</failure>
+    <system-out>Session Factory Destroyed
+Probando el borrado de productos...
+</system-out>
+  </testcase>
+</testsuite>
